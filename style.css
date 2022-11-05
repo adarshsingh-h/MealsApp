@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #22c1c3, #fdbb2d);
+}
+
+/* search bar */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 160px;
+    position: relative;
+}
+
+/* search results */
+.results {
+    position: absolute;
+    top: 40px;
+    list-style: none;
+    background-color: #fff;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 399px;
+    display: none;
+    color: black;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.search-container input {
+    width: 50%;
+}
+
+.navbar {
+    width: 100vw;
+    display: flex;
+}
+
+.btn {
+    margin-left: 800px;
+}
+
+nav {
+    width: 100vw;
+    background-color: #333;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+nav > button {
+    padding: 5px 20px;
+}
+
+.search-bar {
+    width: 400px;
+    height: 60%;
+}
+
+/* meals details */
+.details {
+    box-shadow: 0 0.1rem 2rem rgba(0, 0, 0, 0.6);
+    max-width: 70vw;
+    height: fit-content;
+    margin: 30px auto;
+    grid-template: 1fr 5fr / 1fr 1fr;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    grid-area: 1/1/3/2;
+    width: 90%;
+    height: 90%;
+    place-self: center;
+}
+
+.title {
+    align-self: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.instructions {
+    grid-area: 2/2/3/3;
+    padding: 0.6rem;
+}
+
+.icon {
+    margin-right: 5px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.fav {
+    font-weight: 600;
+}
+
+.favTitle {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.favMeals {
+    margin-bottom: 1rem;
+}
+
+.wrapper {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.wrapper > img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
